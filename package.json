@@ -5,11 +5,7 @@
   "main": "''",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean:compile": "rm -rf ./compiled && mkdir ./compiled",
-    "precompile": "npm run clean:compile",
-    "compile:json": "node ./node_modules/beetlejuice/.bin/index.js generate-json source --out compiled/MyApp.json",
-    "compile:types": "node ./node_modules/beetlejuice/.bin/index.js generate-types compiled/MyApp.json --out compiled/MyApp.d.ts",
-    "compile": "npm run compile:json && npm run compile:types"
+    "compile": "npm run ./node_modules/beetlejuice/bin/index.js compile ."
   },
   "author": "",
   "license": "ISC",

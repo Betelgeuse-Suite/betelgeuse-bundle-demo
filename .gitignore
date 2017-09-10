@@ -58,3 +58,5 @@ typings/
 .env
 
 # Dist
+tmp
+tsconfig.json
