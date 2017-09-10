@@ -6,6 +6,11 @@ declare namespace Beetlejuice {
                 "test": string;
                 "test2": string;
             };
+            "nested": {
+                "file": {
+                    "value": number;
+                };
+            };
         };
     }
 }

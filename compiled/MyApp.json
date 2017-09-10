@@ -4,6 +4,11 @@
             "source": "still works",
             "test": "just another value",
             "test2": "just another value heeeye asdas"
+        },
+        "nested": {
+            "file": {
+                "value": 42
+            }
         }
     }
 }
