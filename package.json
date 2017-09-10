@@ -5,7 +5,7 @@
   "main": "''",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "npm run ./node_modules/beetlejuice/bin/index.js compile ."
+    "compile": "node ./node_modules/beetlejuice/.bin/index.js compile ."
   },
   "author": "",
   "license": "ISC",

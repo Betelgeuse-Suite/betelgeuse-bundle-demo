@@ -1,7 +1,8 @@
 {
     "": {
         "index": {
-            "source": "works"
+            "source": "still works",
+            "test": "just another value"
         }
     }
 }
