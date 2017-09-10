@@ -3,6 +3,8 @@ declare namespace Beetlejuice {
         "": {
             "index": {
                 "source": string;
+                "test": string;
+                "test2": string;
             };
         };
     }

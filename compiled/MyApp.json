@@ -2,7 +2,8 @@
     "": {
         "index": {
             "source": "still works",
-            "test": "just another value"
+            "test": "just another value",
+            "test2": "just another value"
         }
     }
 }
