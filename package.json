@@ -2,8 +2,8 @@
   "name": "beetlejuice-sample-repo1",
   "version": "3.1.0",
   "description": "The Mock Repository",
-  "main": "./.bin/bluebird.js",
-  "types": "./.bin/bluebird.d.ts",
+  "main": "./.bin/beetlejuice.js",
+  "types": "./.bin/beetlejuice.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "node ./node_modules/beetlejuice/.bin/index.js compile ."
