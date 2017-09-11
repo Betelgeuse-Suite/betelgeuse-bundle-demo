@@ -1,6 +1,6 @@
 {
   "name": "beetlejuice-sample-repo1",
-  "version": "3.0.4",
+  "version": "3.1.0",
   "description": "The Mock Repository",
   "main": "./.bin/bluebird.js",
   "types": "./.bin/bluebird.d.ts",
