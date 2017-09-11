@@ -11,9 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "beetlejuice": "https://github.com/GabrielCTroia/beetlejuice.git#v0.0.5"
-  },
-  "dependencies": {
-    "beetlejuice": "git+https://github.com/GabrielCTroia/beetlejuice.git#v0.0.6"
+    "beetlejuice": "https://github.com/GabrielCTroia/beetlejuice.git#v0.0.6"
   }
 }
