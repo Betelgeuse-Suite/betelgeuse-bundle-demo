@@ -1,6 +1,6 @@
 {
   "name": "beetlejuice-sample-repo1",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "The Mock Repository",
   "main": "./.bin/beetlejuice.js",
   "types": "./.bin/beetlejuice.d.ts",
