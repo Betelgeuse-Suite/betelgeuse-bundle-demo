@@ -1,6 +1,6 @@
 {
   "name": "mock-repository",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "The Mock Repository",
   "main": "./.bin/bluebird.js",
   "types": "./.bin/bluebird.d.ts",
