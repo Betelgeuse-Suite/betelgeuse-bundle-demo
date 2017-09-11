@@ -2,7 +2,8 @@
   "name": "mock-repository",
   "version": "3.0.3",
   "description": "The Mock Repository",
-  "main": "''",
+  "main": "./.bin/bluebird.js",
+  "types": "./.bin/bluebird.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "node ./node_modules/beetlejuice/.bin/index.js compile ."
@@ -10,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "beetlejuice": "https://github.com/GabrielCTroia/beetlejuice.git@v0.0.4"
+    "beetlejuice": "https://github.com/GabrielCTroia/beetlejuice.git#v0.0.4"
   }
 }
