@@ -1,14 +1,16 @@
 declare namespace Beetlejuice {
     interface MyApp {
-        "nested": {
-            "file": {
-                "value": number;
+        "": {
+            "index": {
+                "source": string;
+                "test": string;
+                "test2": string;
             };
-        };
-        "index": {
-            "source": string;
-            "test": string;
-            "test2": string;
+            "nested": {
+                "file": {
+                    "value": number;
+                };
+            };
         };
     }
 }
