@@ -1,2 +1,2 @@
-import { __SAMPLE__ } from './__SAMPLE__.d';
-export declare const model: __SAMPLE__;
+import { MyApp } from './MyApp.d';
+export declare const model: MyApp;
