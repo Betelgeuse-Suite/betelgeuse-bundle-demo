@@ -52,13 +52,13 @@ var window = global;
         return vA.major === vB.major;
     };
     var getJSONP = function (url, success) {
-        var ud = '_' + +new Date, script = document.createElement('script'), head = document.getElementsByTagName('head')[0]
+        var script = document.createElement('script'), head = document.getElementsByTagName('head')[0]
             || document.documentElement;
-        global[ud] = function (data) {
+        global['__beetlejuice__getVersions'] = function (data) {
             head.removeChild(script);
             success && success(data);
         };
-        script.src = url.replace('callback=?', 'callback=' + ud);
+        script.src = url;
         head.appendChild(script);
     };
     var sortVersionsDesc = function (vv) {
@@ -73,7 +73,7 @@ var window = global;
         return sortVersionsDesc(onlyNewerAndNonBreakingVersions(vv))[0];
     };
     var version = toVersion(VERSION);
-    var versionsJsonURL = URL + '/master/versions.json';
+    var versionsJsonURL = URL + '/master/versions.js';
     console.log('Attempting to get', versionsJsonURL);
     getJSONP(versionsJsonURL, function (data) {
         console.log('Versions JSON data', data);
