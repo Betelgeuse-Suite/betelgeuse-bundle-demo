@@ -2,8 +2,6 @@
 exports.__esModule = true;
 var json = require('./MyApp.json');
 exports.getModel = function () { return json; };
-var __CURRENT_VERSION__ = '2.0.0';
-var __ENDPOINT_URL__ = 'https://raw.githubusercontent.com/GabrielCTroia/beetlejuice-sample-repo1';
 var window = global;
 (function (global, document, URL, VERSION) {
     console.log('Current version:', VERSION);
@@ -74,7 +72,7 @@ var window = global;
     };
     var version = toVersion(VERSION);
     var versionsJsonURL = URL + '/master/versions.js';
-    console.log('Attempting to get', versionsJsonURL);
+    console.log('Attempting to fetch json from', versionsJsonURL);
     getJSONP(versionsJsonURL, function (data) {
         console.log('Versions JSON data', data);
         var allVersions = Object
@@ -91,4 +89,4 @@ var window = global;
             console.log('Nothing new!');
         }
     });
-})(window, window.document, __ENDPOINT_URL__, __CURRENT_VERSION__);
+})(window, window.document, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '5.0.4');
