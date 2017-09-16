@@ -1,14 +1,14 @@
 {
-    "": {
-        "index": {
-            "source": "still works. change",
-            "test": "just another value",
-            "test2": "just another value heeeye asdas"
-        },
+    "nested": {
         "nested": {
             "file": {
                 "value": 49
             }
         }
+    },
+    "index": {
+        "source": "still works. change",
+        "test": "just another value",
+        "test2": "just another value heeeye asdas"
     }
 }
