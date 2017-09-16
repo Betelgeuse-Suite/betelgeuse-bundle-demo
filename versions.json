@@ -1,4 +1,4 @@
-foo({
+{
   "1.0.0": {
     "repository": "",
     "timestamp": ""
@@ -59,4 +59,4 @@ foo({
     "repository": "",
     "timestamp": ""
   }
-});
+}

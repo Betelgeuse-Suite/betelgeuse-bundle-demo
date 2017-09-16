@@ -1,4 +1,4 @@
-foo({
+__beetlejuice__getVersions({
   "1.0.0": {
     "repository": "",
     "timestamp": ""
