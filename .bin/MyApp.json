@@ -1,7 +1,7 @@
 {
     "index": {
         "source": "still works. change again",
-        "test": "just another value. back",
+        "test": "just another value",
         "test2": "just another value heeeye"
     },
     "nested": {
