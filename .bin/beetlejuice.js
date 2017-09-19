@@ -89,4 +89,4 @@ var window = global;
             console.log('Nothing new!');
         }
     });
-})(window, window.document, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '7.0.2');
+})(window, window.document, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '7.0.3');
