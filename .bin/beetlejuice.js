@@ -50,7 +50,7 @@ var DataStore = (function () {
 }());
 var store = new DataStore(window.localStorage);
 var getCurrentVersion = function () {
-    return (store.getCurrent() || { version: toVersion('11.0.0') }).version;
+    return (store.getCurrent() || { version: toVersion('11.0.1') }).version;
 };
 exports.getModel = function () {
     var cached = store.getCurrent();
@@ -58,7 +58,7 @@ exports.getModel = function () {
         return cached;
     }
     var json = require('./Data.json');
-    store.update(toVersion('11.0.0'), json);
+    store.update(toVersion('11.0.1'), json);
     return json;
 };
 (function (window, URL, VERSION) {
