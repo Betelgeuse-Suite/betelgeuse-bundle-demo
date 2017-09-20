@@ -2,9 +2,9 @@
 exports.__esModule = true;
 var json = require('./MyApp.json');
 exports.getModel = function () { return json; };
-var window = global;
-(function (global, document, URL, VERSION) {
+(function (window, URL, VERSION, APP_NAME) {
     console.log('Current version:', VERSION);
+    var document = window.document;
     var toVersion = function (v) {
         if (isValidStringVersion(v)) {
             throw "The given string: " + v + " is not a valid version!";
@@ -52,7 +52,7 @@ var window = global;
     var getJSONP = function (url, success) {
         var script = document.createElement('script'), head = document.getElementsByTagName('head')[0]
             || document.documentElement;
-        global['__beetlejuice__getVersions'] = function (data) {
+        window.__beetlejuice__getJSONP = function (data) {
             head.removeChild(script);
             success && success(data);
         };
@@ -72,6 +72,9 @@ var window = global;
     };
     var version = toVersion(VERSION);
     var versionsJsonURL = URL + '/master/versions.js';
+    var getDataUrl = function (version) {
+        return URL + "/v" + toString(version) + "/.bin/" + APP_NAME + ".js";
+    };
     console.log('Attempting to fetch json from', versionsJsonURL);
     getJSONP(versionsJsonURL, function (data) {
         console.log('Versions JSON data', data);
@@ -84,9 +87,16 @@ var window = global;
         var bestVersion = getBestVersion(allVersions);
         if (bestVersion) {
             console.log('Best Version:', toString(bestVersion));
+            console.log('Loading', getDataUrl(bestVersion));
+            getJSONP(getDataUrl(bestVersion), function (data) {
+                console.log('New data', data);
+            });
         }
         else {
             console.log('Nothing new!');
         }
     });
-})(window, window.document, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '7.0.4');
+    var saveData = function (key, data) {
+        window.localStorage.setItem(key, data);
+    };
+})(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '8.0.0', 'MyApp');
