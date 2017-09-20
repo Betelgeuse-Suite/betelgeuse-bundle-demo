@@ -51,15 +51,15 @@ var DataStore = (function () {
 }());
 var store = new DataStore(window.localStorage);
 var getCurrentVersion = function () {
-    return (store.getCurrent() || { version: toVersion('11.0.2') }).version;
+    return (store.getCurrent() || { version: toVersion('11.0.3') }).version;
 };
 exports.getModel = function () {
     var cached = store.getCurrent();
     if (cached) {
-        return cached;
+        return cached.data;
     }
     var json = require('./Data.json');
-    store.update(toVersion('11.0.2'), json);
+    store.update(toVersion('11.0.3'), json);
     return json;
 };
 (function (window, URL, VERSION) {
@@ -127,7 +127,7 @@ exports.getModel = function () {
             });
         }
         else {
-            console.log('Nothing new! Current Version:', VERSION);
+            console.log('Nothing new! Current Version:', toString(VERSION));
         }
     });
 })(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', getCurrentVersion());
