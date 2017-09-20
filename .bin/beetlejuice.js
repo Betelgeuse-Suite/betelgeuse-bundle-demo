@@ -22,6 +22,7 @@ var toString = function (v) {
     v = v || {};
     return v.major + "." + v.minor + "." + v.patch;
 };
+var now = function () { return (new Date()).getTime(); };
 var DataStore = (function () {
     function DataStore(storage) {
         this.storage = storage;
@@ -30,7 +31,7 @@ var DataStore = (function () {
     DataStore.prototype.update = function (version, data) {
         this.storage.setItem(this.KEY, JSON.stringify({
             version: toString(version),
-            updated_at: (new Date()).getTime(),
+            updated_at: now(),
             data: data
         }));
     };
@@ -51,7 +52,7 @@ var DataStore = (function () {
 }());
 var store = new DataStore(window.localStorage);
 var getCurrentVersion = function () {
-    return (store.getCurrent() || { version: toVersion('11.0.8') }).version;
+    return (store.getCurrent() || { version: toVersion('11.0.9') }).version;
 };
 exports.getModel = function () {
     var cached = store.getCurrent();
@@ -59,7 +60,7 @@ exports.getModel = function () {
         return cached.data;
     }
     var json = require('./Data.json');
-    store.update(toVersion('11.0.8'), json);
+    store.update(toVersion('11.0.9'), json);
     return json;
 };
 (function (window, URL, VERSION) {
@@ -108,7 +109,10 @@ exports.getModel = function () {
     var getBestVersion = function (vv) {
         return sortVersionsDesc(onlyNewerAndNonBreakingVersions(vv))[0];
     };
-    var versionsJsonURL = URL + '/master/versions.js';
+    var cacheTimestamp = function (seconds) {
+        return '?at=' + Math.floor(now() / (seconds * 1000));
+    };
+    var versionsJsonURL = URL + '/master/versions.js' + cacheTimestamp(60);
     var getDataUrl = function (version) {
         return URL + "/v" + toString(version) + "/.bin/Data.js";
     };
