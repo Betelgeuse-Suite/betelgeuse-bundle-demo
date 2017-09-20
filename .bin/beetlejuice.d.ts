@@ -1,2 +1,2 @@
-import { MyApp } from './MyApp.d';
+import { MyApp } from './Data.d';
 export declare const getModel: () => MyApp;

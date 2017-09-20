@@ -1,5 +1,5 @@
 declare namespace Beetlejuice {
-    interface MyApp {
+    interface Data {
         "index": {
             "source": string;
             "test": string;
