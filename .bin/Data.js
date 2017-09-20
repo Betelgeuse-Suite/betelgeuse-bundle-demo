@@ -1,8 +1,8 @@
 __beetlejuice__getJSONP({
     "index": {
         "source": "source v11",
-        "test": "test v11",
-        "tesyy": "tesyy v11"
+        "test": "tj is the maaaan",
+        "tesyy": "yo yo"
     },
     "nested": {
         "nested": {
