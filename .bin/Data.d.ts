@@ -3,7 +3,7 @@ declare namespace Beetlejuice {
         "index": {
             "source": string;
             "test": string;
-            "tes": string;
+            "tesyyy": string;
         };
         "nested": {
             "nested": {
