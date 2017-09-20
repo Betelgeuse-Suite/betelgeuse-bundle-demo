@@ -93,7 +93,7 @@ exports.getModel = function () {
     var version = toVersion(VERSION);
     var versionsJsonURL = URL + '/master/versions.js';
     var getDataUrl = function (version) {
-        return URL + "/v" + toString(version) + "/.bin/" + APP_NAME + ".js";
+        return URL + "/v" + toString(version) + "/.bin/Data.js";
     };
     console.log('Attempting to fetch json from', versionsJsonURL);
     getJSONP(versionsJsonURL, function (data) {
@@ -116,4 +116,4 @@ exports.getModel = function () {
             console.log('Nothing new!');
         }
     });
-})(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '10.0.1', 'MyApp');
+})(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '10.0.2', 'MyApp');

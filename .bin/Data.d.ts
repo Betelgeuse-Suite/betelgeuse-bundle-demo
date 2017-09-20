@@ -1,5 +1,10 @@
 declare namespace Beetlejuice {
     interface Data {
+        "index": {
+            "source": string;
+            "test": string;
+            "tesyyy": string;
+        };
         "nested": {
             "nested": {
                 "file": {
@@ -7,11 +12,6 @@ declare namespace Beetlejuice {
                     "another-value": number;
                 };
             };
-        };
-        "index": {
-            "source": string;
-            "test": string;
-            "tesyyy": string;
         };
     }
 }

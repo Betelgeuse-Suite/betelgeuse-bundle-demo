@@ -1,4 +1,9 @@
 __beetlejuice__getJSONP({
+    "index": {
+        "source": "still works. change again",
+        "test": "just another value. ",
+        "tesyyy": "just another value heeeye. asda asdas. changesasd.adas"
+    },
     "nested": {
         "nested": {
             "file": {
@@ -6,10 +11,5 @@ __beetlejuice__getJSONP({
                 "another-value": 90890
             }
         }
-    },
-    "index": {
-        "source": "still works. change again",
-        "test": "just another value. ",
-        "tesyyy": "just another value heeeye. asda asdas. changesasd"
     }
 });
