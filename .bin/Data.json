@@ -1,14 +1,14 @@
 {
     "index": {
-        "source": "still works. change again",
-        "test": "just another value. ",
-        "tesyy": "test"
+        "source": "source v11",
+        "test": "test v11",
+        "tesyy": "tesyy v11"
     },
     "nested": {
         "nested": {
             "file": {
                 "value": 49,
-                "another-value": 90890
+                "another-value": 90
             }
         }
     }
