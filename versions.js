@@ -1,4 +1,5 @@
-__beetlejuice__getVersions({
+__beetlejuice__getJSONP({
+    "8.0.1": "",
     "8.0.0": "",
     "7.0.4": "",
     "7.0.3": "",
