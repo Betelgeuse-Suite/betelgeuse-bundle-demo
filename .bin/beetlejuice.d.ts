@@ -1,2 +1,3 @@
-import { MyApp } from './Data.d';
-export declare const getModel: () => MyApp;
+import { Data } from './Data.d';
+export declare type MyApp = Data;
+export declare const getModel: () => Data;

@@ -116,4 +116,4 @@ exports.getModel = function () {
             console.log('Nothing new!');
         }
     });
-})(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '9.0.0', 'MyApp');
+})(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', '9.0.1', 'MyApp');
