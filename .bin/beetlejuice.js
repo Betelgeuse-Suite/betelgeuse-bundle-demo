@@ -25,6 +25,7 @@ var toString = function (v) {
 var DataStore = (function () {
     function DataStore(storage) {
         this.storage = storage;
+        this.KEY = '__beetlejuice__data';
     }
     DataStore.prototype.update = function (version, data) {
         this.storage.setItem(this.KEY, JSON.stringify({
@@ -50,7 +51,7 @@ var DataStore = (function () {
 }());
 var store = new DataStore(window.localStorage);
 var getCurrentVersion = function () {
-    return (store.getCurrent() || { version: toVersion('11.0.1') }).version;
+    return (store.getCurrent() || { version: toVersion('11.0.2') }).version;
 };
 exports.getModel = function () {
     var cached = store.getCurrent();
@@ -58,7 +59,7 @@ exports.getModel = function () {
         return cached;
     }
     var json = require('./Data.json');
-    store.update(toVersion('11.0.1'), json);
+    store.update(toVersion('11.0.2'), json);
     return json;
 };
 (function (window, URL, VERSION) {
@@ -113,24 +114,20 @@ exports.getModel = function () {
     };
     console.log('Attempting to fetch json from', versionsJsonURL);
     getJSONP(versionsJsonURL, function (data) {
-        console.log('Versions JSON data', data);
         var allVersions = Object
             .keys(data)
             .map(toVersion);
-        allVersions.forEach(function (v) {
-            console.log(toString(v));
-        });
         var bestVersion = getBestVersion(allVersions);
         if (bestVersion) {
             console.log('New version found:', toString(bestVersion));
             console.log('Loading', getDataUrl(bestVersion));
             getJSONP(getDataUrl(bestVersion), function (data) {
-                console.log('Next Data', data);
+                console.log('Data', toString(bestVersion), ':', data);
                 store.update(bestVersion, data);
             });
         }
         else {
-            console.log('Nothing new! Current Version');
+            console.log('Nothing new! Current Version:', VERSION);
         }
     });
 })(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', getCurrentVersion());
