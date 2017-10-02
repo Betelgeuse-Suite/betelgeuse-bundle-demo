@@ -26,7 +26,7 @@ var now = function () { return (new Date()).getTime(); };
 var DataStore = (function () {
     function DataStore(storage) {
         this.storage = storage;
-        this.KEY = '__beetlejuice__data';
+        this.KEY = '__betelgeuse__data';
     }
     DataStore.prototype.update = function (version, data) {
         this.storage.setItem(this.KEY, JSON.stringify({
@@ -52,7 +52,7 @@ var DataStore = (function () {
 }());
 var store = new DataStore(window.localStorage);
 var getCurrentVersion = function () {
-    return (store.getCurrent() || { version: toVersion('11.0.13') }).version;
+    return (store.getCurrent() || { version: toVersion('11.0.14') }).version;
 };
 exports.getModel = function () {
     var cached = store.getCurrent();
@@ -60,7 +60,7 @@ exports.getModel = function () {
         return cached.data;
     }
     var json = require('./Data.json');
-    store.update(toVersion('11.0.13'), json);
+    store.update(toVersion('11.0.14'), json);
     return json;
 };
 (function (window, URL, VERSION) {
@@ -91,7 +91,7 @@ exports.getModel = function () {
     var getJSONP = function (url, success) {
         var script = document.createElement('script'), head = document.getElementsByTagName('head')[0]
             || document.documentElement;
-        window.__beetlejuice__getJSONP = function (data) {
+        window.__betelgeuse__getJSONP = function (data) {
             head.removeChild(script);
             success && success(data);
         };
@@ -134,4 +134,4 @@ exports.getModel = function () {
             console.log('Nothing new! Current Version:', toString(VERSION));
         }
     });
-})(window, 'https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1', getCurrentVersion());
+})(window, 'https://rawgit.com/GabrielCTroia/betelgeuse-sample-repo1', getCurrentVersion());

@@ -1,4 +1,4 @@
-declare namespace Beetlejuice {
+declare namespace Betelgeuse {
     interface Data {
         "index": {
             "source": string;
@@ -15,4 +15,4 @@ declare namespace Beetlejuice {
         };
     }
 }
-export = Beetlejuice;
+export = Betelgeuse;
