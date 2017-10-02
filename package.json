@@ -1,15 +1,15 @@
 {
-  "name": "beetlejuice-sample-repo1",
+  "name": "betelgeuse-sample-repo1",
   "version": "11.0.13",
   "description": "The Mock Repository",
-  "main": "./.bin/beetlejuice.js",
-  "types": "./.bin/beetlejuice.d.ts",
-  "repository": "https://github.com/GabrielCTroia/beetlejuice-sample-repo1.git",
-  "cdn": "https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1",
+  "main": "./.bin/betelgeuse.js",
+  "types": "./.bin/betelgeuse.d.ts",
+  "repository": "https://github.com/GabrielCTroia/betelgeuse-sample-repo1.git",
+  "cdn": "https://rawgit.com/GabrielCTroia/betelgeuse-sample-repo1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "node ./node_modules/beetlejuice/.bin/index.js compile .",
-    "compile:sdks": "node ./node_modules/beetlejuice/.bin/index.js compile-sdks ."
+    "compile": "node ./node_modules/betelgeuse/.bin/index.js compile .",
+    "compile:sdks": "node ./node_modules/betelgeuse/.bin/index.js compile-sdks ."
   },
   "author": "",
   "license": "ISC",
