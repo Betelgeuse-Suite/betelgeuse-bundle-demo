@@ -1,6 +1,6 @@
 {
   "name": "betelgeuse-sample-repo1",
-  "version": "11.0.14",
+  "version": "11.1.0",
   "description": "The Mock Repository",
   "main": "./.bin/betelgeuse.js",
   "types": "./.bin/betelgeuse.d.ts",
