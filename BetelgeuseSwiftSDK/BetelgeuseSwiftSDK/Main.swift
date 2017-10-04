@@ -11,44 +11,34 @@ import Foundation
 public class BetelgeuseSwiftSDK {
 
     public init() {
-        print("Betelgeuse Swift SDK works")
-
-        let fileManager = FileManager.default
-
-//        print(fileManager.currentDirectoryPath)
-
-//        let bundle = Bundle(for: BetelgeuseSwiftSDK.self as AnyClass)
-
-//        if let path = bundle.path(forResource: "BetelgeuseSwiftSDK/.bin/Data", ofType: "json") {
-//            print("yeep")
-//        } else {
-//            print("noop")
-//        }
-
-
         if let m = BetelgeuseSwiftSDK.loadJson() {
-            print("The Model() is \(m.index)")
+            print("The Model() is \(m.nested.nested.file.value)")
         }
-
     }
 
     private static func loadJson() -> Model? {
         let fileName = "Data"
 
-        let bundle = Bundle(for: BetelgeuseSwiftSDK.self as AnyClass)
-        print("bundle path: \(bundle.bundleURL)")
+        let podBundle = Bundle(for: BetelgeuseSwiftSDK.self as AnyClass)
 
-        if let path = bundle.path(forResource: fileName, ofType: "json") {
-            print("found")
-            do {
-                let jsonData = try NSData(contentsOfFile: path, options: NSData.ReadingOptions.mappedIfSafe)
-                do {
-                    let jsonResult: NSDictionary = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
+        if let bundleURL = podBundle.url(forResource: "BetelgeuseSwiftSDKData", withExtension: "bundle") {
+            if let bundle = Bundle(url: bundleURL) {
+                if let path = bundle.path(forResource: fileName, ofType: "json") {
+                    if let jsonData = try? NSData(
+                        contentsOfFile: path,
+                        options: NSData.ReadingOptions.mappedIfSafe
+                        ) {
+                        if let jsonResult: NSDictionary = try? JSONSerialization.jsonObject(
+                            with: jsonData as Data,
+                            options: JSONSerialization.ReadingOptions.mutableContainers
+                            ) as! NSDictionary {
 
-//                    print(jsonResult)
-                    return Model(jsonResult)
-                } catch {}
-            } catch {}
+                            print(jsonResult)
+                            return Model(jsonResult)
+                        }
+                    }
+                }
+            }
         } else {
             print("Path \(fileName) not found")
         }
