@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B981FD70FEBBB3AC8BF5EEEBF0626E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3557F20FC949B694BABD9A5EFE05C756 /* Pods-SampleRepoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B587BE9511398EB2EFF00233BC6DD429 /* Pods-SampleRepoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DD046C9E92707FD294E80B7C56F08DC /* Betelgeuse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03016E7B060CFF3C8A14626BBD5C95B3 /* Betelgeuse.swift */; };
+		AAFB1E9901D636F31DBDD5CA5FA558E5 /* Pods-SampleRepoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC284471297B684B1A1516DDEF67EB2A /* Pods-SampleRepoSwift-dummy.m */; };
+		ECF9B7373004F257F1C0082A42EEA1E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		FC9DC12A36CD98943091CC5DD4B806A8 /* BetelgeuseSwiftClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45278112C423F27F4008BB18C7069428 /* BetelgeuseSwiftClient-dummy.m */; };
+		FF7545AEC8422F2C00CB3BAFECD5E06C /* BetelgeuseSwiftClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67497A0F957936B22DB872193DD25435 /* BetelgeuseSwiftClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77F3D4680028D4426A4F5ACB71E6988A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8455EDD8F235EECBAEEC0ECA2DDFF704;
+			remoteInfo = BetelgeuseSwiftClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03016E7B060CFF3C8A14626BBD5C95B3 /* Betelgeuse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Betelgeuse.swift; sourceTree = "<group>"; };
+		1FD375A37C56E6413DC0ACBD5A8DA5F6 /* Pods_SampleRepoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SampleRepoSwift.framework; path = "Pods-SampleRepoSwift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A09F301E97E1916005A35BFEAC9F23 /* Pods-SampleRepoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SampleRepoSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		289BC19B795A906B0D4154E06E34F8DD /* BetelgeuseSwiftClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BetelgeuseSwiftClient.xcconfig; sourceTree = "<group>"; };
+		45278112C423F27F4008BB18C7069428 /* BetelgeuseSwiftClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BetelgeuseSwiftClient-dummy.m"; sourceTree = "<group>"; };
+		5D25AFE6C42F3DA59753986227ED8207 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67497A0F957936B22DB872193DD25435 /* BetelgeuseSwiftClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BetelgeuseSwiftClient-umbrella.h"; sourceTree = "<group>"; };
+		6ED7D4F2B07F9693125B80E352FB4ECF /* BetelgeuseSwiftClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BetelgeuseSwiftClient.framework; path = BetelgeuseSwiftClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7657B1AB36094BD32FCE8F5CC17B8B55 /* Pods-SampleRepoSwift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SampleRepoSwift-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B587BE9511398EB2EFF00233BC6DD429 /* Pods-SampleRepoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SampleRepoSwift-umbrella.h"; sourceTree = "<group>"; };
+		C23F01346AD9FD3D788E63ECFCA30CB9 /* Pods-SampleRepoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SampleRepoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CC284471297B684B1A1516DDEF67EB2A /* Pods-SampleRepoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SampleRepoSwift-dummy.m"; sourceTree = "<group>"; };
+		D24C5F9F0C54285139D9A67D713ECCF8 /* Pods-SampleRepoSwift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SampleRepoSwift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D29EDEA3E39BCC760D799396B5BFA62C /* Pods-SampleRepoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SampleRepoSwift.modulemap"; sourceTree = "<group>"; };
+		E7CC3F51867A32556265A138B375EF40 /* BetelgeuseSwiftClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BetelgeuseSwiftClient-prefix.pch"; sourceTree = "<group>"; };
+		EECB249C2B038DD55CC456A0497FA60F /* Pods-SampleRepoSwift-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SampleRepoSwift-resources.sh"; sourceTree = "<group>"; };
+		F02D3B77817DC1DF9C68C3E57F52A791 /* BetelgeuseSwiftClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = BetelgeuseSwiftClient.modulemap; sourceTree = "<group>"; };
+		FC0DF32AC1109702312B18337106E9FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C68AD21B898F5E144E06B9BF10A970C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF9B7373004F257F1C0082A42EEA1E0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5315BD2B21406F518D4A206244747E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B981FD70FEBBB3AC8BF5EEEBF0626E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DF2949A469ECDA61545F008B4DBF181 /* Pods-SampleRepoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				FC0DF32AC1109702312B18337106E9FA /* Info.plist */,
+				D29EDEA3E39BCC760D799396B5BFA62C /* Pods-SampleRepoSwift.modulemap */,
+				D24C5F9F0C54285139D9A67D713ECCF8 /* Pods-SampleRepoSwift-acknowledgements.markdown */,
+				7657B1AB36094BD32FCE8F5CC17B8B55 /* Pods-SampleRepoSwift-acknowledgements.plist */,
+				CC284471297B684B1A1516DDEF67EB2A /* Pods-SampleRepoSwift-dummy.m */,
+				EECB249C2B038DD55CC456A0497FA60F /* Pods-SampleRepoSwift-resources.sh */,
+				B587BE9511398EB2EFF00233BC6DD429 /* Pods-SampleRepoSwift-umbrella.h */,
+				26A09F301E97E1916005A35BFEAC9F23 /* Pods-SampleRepoSwift.debug.xcconfig */,
+				C23F01346AD9FD3D788E63ECFCA30CB9 /* Pods-SampleRepoSwift.release.xcconfig */,
+			);
+			name = "Pods-SampleRepoSwift";
+			path = "Target Support Files/Pods-SampleRepoSwift";
+			sourceTree = "<group>";
+		};
+		2EC6A41D6D3D368458380A91059A622F /* BetelgeuseSwiftClient */ = {
+			isa = PBXGroup;
+			children = (
+				F06F0D93F5CBBFF0238F24D1DB824814 /* BetelgeuseSwiftSDK */,
+				B29A2B2666616D6E0A056BB1A01FA93C /* Support Files */,
+			);
+			name = BetelgeuseSwiftClient;
+			path = "/Users/gabrieltroia/Projects/Betelgeuse/betelgeuse-swift-client";
+			sourceTree = "<absolute>";
+		};
+		52107B958D19EED773DE9AF48593F88F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EC6A41D6D3D368458380A91059A622F /* BetelgeuseSwiftClient */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				52107B958D19EED773DE9AF48593F88F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F53D7476B31E05D93A10EAE27C7126D9 /* Products */,
+				D3A2C60C8F312026CB15BB20C678B75C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B29A2B2666616D6E0A056BB1A01FA93C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F02D3B77817DC1DF9C68C3E57F52A791 /* BetelgeuseSwiftClient.modulemap */,
+				289BC19B795A906B0D4154E06E34F8DD /* BetelgeuseSwiftClient.xcconfig */,
+				45278112C423F27F4008BB18C7069428 /* BetelgeuseSwiftClient-dummy.m */,
+				E7CC3F51867A32556265A138B375EF40 /* BetelgeuseSwiftClient-prefix.pch */,
+				67497A0F957936B22DB872193DD25435 /* BetelgeuseSwiftClient-umbrella.h */,
+				5D25AFE6C42F3DA59753986227ED8207 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../betelgeuse-sample-repo1/SampleRepoSwift/Pods/Target Support Files/BetelgeuseSwiftClient";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3A2C60C8F312026CB15BB20C678B75C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DF2949A469ECDA61545F008B4DBF181 /* Pods-SampleRepoSwift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F06F0D93F5CBBFF0238F24D1DB824814 /* BetelgeuseSwiftSDK */ = {
+			isa = PBXGroup;
+			children = (
+				03016E7B060CFF3C8A14626BBD5C95B3 /* Betelgeuse.swift */,
+			);
+			name = BetelgeuseSwiftSDK;
+			path = BetelgeuseSwiftSDK;
+			sourceTree = "<group>";
+		};
+		F53D7476B31E05D93A10EAE27C7126D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6ED7D4F2B07F9693125B80E352FB4ECF /* BetelgeuseSwiftClient.framework */,
+				1FD375A37C56E6413DC0ACBD5A8DA5F6 /* Pods_SampleRepoSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		149B7D060631061DEE416058E7C5A382 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7545AEC8422F2C00CB3BAFECD5E06C /* BetelgeuseSwiftClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7BEA05CE3E702E5AF9181B22D2522FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3557F20FC949B694BABD9A5EFE05C756 /* Pods-SampleRepoSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		208BAAA119557EF54EE281416F7EA603 /* Pods-SampleRepoSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0128335F4634F184E3498051A2AE0227 /* Build configuration list for PBXNativeTarget "Pods-SampleRepoSwift" */;
+			buildPhases = (
+				FD1CE7356D955431919261351915F75C /* Sources */,
+				FB5315BD2B21406F518D4A206244747E /* Frameworks */,
+				C7BEA05CE3E702E5AF9181B22D2522FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09830640C73E5910C5566AC3DB9BD7C2 /* PBXTargetDependency */,
+			);
+			name = "Pods-SampleRepoSwift";
+			productName = "Pods-SampleRepoSwift";
+			productReference = 1FD375A37C56E6413DC0ACBD5A8DA5F6 /* Pods_SampleRepoSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8455EDD8F235EECBAEEC0ECA2DDFF704 /* BetelgeuseSwiftClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18E4355626863D5C66B79748EA927647 /* Build configuration list for PBXNativeTarget "BetelgeuseSwiftClient" */;
+			buildPhases = (
+				5B9370E5120D3001AF2C62462B44B968 /* Sources */,
+				C68AD21B898F5E144E06B9BF10A970C2 /* Frameworks */,
+				149B7D060631061DEE416058E7C5A382 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetelgeuseSwiftClient;
+			productName = BetelgeuseSwiftClient;
+			productReference = 6ED7D4F2B07F9693125B80E352FB4ECF /* BetelgeuseSwiftClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F53D7476B31E05D93A10EAE27C7126D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8455EDD8F235EECBAEEC0ECA2DDFF704 /* BetelgeuseSwiftClient */,
+				208BAAA119557EF54EE281416F7EA603 /* Pods-SampleRepoSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B9370E5120D3001AF2C62462B44B968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD046C9E92707FD294E80B7C56F08DC /* Betelgeuse.swift in Sources */,
+				FC9DC12A36CD98943091CC5DD4B806A8 /* BetelgeuseSwiftClient-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD1CE7356D955431919261351915F75C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAFB1E9901D636F31DBDD5CA5FA558E5 /* Pods-SampleRepoSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09830640C73E5910C5566AC3DB9BD7C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BetelgeuseSwiftClient;
+			target = 8455EDD8F235EECBAEEC0ECA2DDFF704 /* BetelgeuseSwiftClient */;
+			targetProxy = 77F3D4680028D4426A4F5ACB71E6988A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5BD72CBEA0E49D1D13235F0FEF37AA1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289BC19B795A906B0D4154E06E34F8DD /* BetelgeuseSwiftClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BetelgeuseSwiftClient/BetelgeuseSwiftClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BetelgeuseSwiftClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BetelgeuseSwiftClient/BetelgeuseSwiftClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = BetelgeuseSwiftClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6ACDAE43E6A2DD0FB31BAEBDA030E751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289BC19B795A906B0D4154E06E34F8DD /* BetelgeuseSwiftClient.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BetelgeuseSwiftClient/BetelgeuseSwiftClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BetelgeuseSwiftClient/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BetelgeuseSwiftClient/BetelgeuseSwiftClient.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BetelgeuseSwiftClient;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C7A5EE6DE2C3784BAA89D1A5D5EB30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5513B3E35A5C69E7F70F186BD3CE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F259624A1CB08C3E7EABC5E7C07B0314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A09F301E97E1916005A35BFEAC9F23 /* Pods-SampleRepoSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SampleRepoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SampleRepoSwift/Pods-SampleRepoSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SampleRepoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC08C40B4D42451A2ABD984011E61D55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C23F01346AD9FD3D788E63ECFCA30CB9 /* Pods-SampleRepoSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SampleRepoSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SampleRepoSwift/Pods-SampleRepoSwift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SampleRepoSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0128335F4634F184E3498051A2AE0227 /* Build configuration list for PBXNativeTarget "Pods-SampleRepoSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F259624A1CB08C3E7EABC5E7C07B0314 /* Debug */,
+				FC08C40B4D42451A2ABD984011E61D55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18E4355626863D5C66B79748EA927647 /* Build configuration list for PBXNativeTarget "BetelgeuseSwiftClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BD72CBEA0E49D1D13235F0FEF37AA1C /* Debug */,
+				6ACDAE43E6A2DD0FB31BAEBDA030E751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5513B3E35A5C69E7F70F186BD3CE9C /* Debug */,
+				9C7A5EE6DE2C3784BAA89D1A5D5EB30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

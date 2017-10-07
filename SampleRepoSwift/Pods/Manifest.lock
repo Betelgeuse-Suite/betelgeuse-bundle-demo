@@ -1,0 +1,16 @@
+PODS:
+  - BetelgeuseSwiftClient (0.0.6)
+
+DEPENDENCIES:
+  - BetelgeuseSwiftClient (from `~/Projects/Betelgeuse/betelgeuse-swift-client`)
+
+EXTERNAL SOURCES:
+  BetelgeuseSwiftClient:
+    :path: "~/Projects/Betelgeuse/betelgeuse-swift-client"
+
+SPEC CHECKSUMS:
+  BetelgeuseSwiftClient: a420f2956377c3376ba0139205d315a444a9ec64
+
+PODFILE CHECKSUM: 6c58dd73022c64f5f98c2c207211939dc854c5f4
+
+COCOAPODS: 1.2.0
