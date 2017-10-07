@@ -12,8 +12,8 @@ import BetelgeuseSwiftClient
 public class SampleRepoSwift {
 
     // MAYBE PLIST VALUES?
-    private static let ENDPOINT_URL = "https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1/master"
-    private static let CURRENT_VERSION = "0.0.1"
+    private static let ENDPOINT_URL = "https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1"
+    private static let CURRENT_VERSION = "11.0.1"
 
     private static var betelgeuseInstance: Betelgeuse?
 
@@ -29,8 +29,9 @@ public class SampleRepoSwift {
                 localDataBundleUrl: bundleURL,
                 localFileName: "Data",
                 localFileExtension: "json",
-                remoteDataUrl: URL(string: "\(ENDPOINT_URL)/.bin/Data.json")!,
-                versionsRegisterUrl: URL(string: "\(ENDPOINT_URL)/versions.json")!,
+                remoteDataBaseUrl: URL(string: "\(ENDPOINT_URL)")!,
+                remoteDataPath: ".bin/Data.json",
+                versionsRegisterUrl: URL(string: "\(ENDPOINT_URL)/master/versions.json")!,
                 currentVersion: CURRENT_VERSION
             )
 
