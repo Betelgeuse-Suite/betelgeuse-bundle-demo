@@ -1,9 +1,9 @@
 import Foundation
 
-class Model {
+public class Model {
 
     public let index: Index
-    class Index {
+    public class Index {
     
         public let source: String
         public let test: String
@@ -16,20 +16,20 @@ class Model {
         }
     }
     public let nested: Nested
-    class Nested {
+    public class Nested {
     
         public let nested: Nested
-        class Nested {
+        public class Nested {
         
             public let file: File
-            class File {
+            public class File {
             
                 public let value: Int
-                public let another-value: Int
+                public let anotherValue: Int
                 
                 init(_ jsonData: NSDictionary) {
                     self.value = jsonData["value"] as! Int
-                    self.another-value = jsonData["another-value"] as! Int
+                    self.anotherValue = jsonData["anotherValue"] as! Int
                 }
             }
             

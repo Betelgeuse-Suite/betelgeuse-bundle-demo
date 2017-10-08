@@ -9,7 +9,7 @@ declare namespace Betelgeuse {
             "nested": {
                 "file": {
                     "value": number;
-                    "another-value": number;
+                    "anotherValue": number;
                 };
             };
         };
