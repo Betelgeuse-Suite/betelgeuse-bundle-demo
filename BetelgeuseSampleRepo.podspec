@@ -24,6 +24,6 @@ s.ios.deployment_target = '8.0'
 
 # This will be added when the swift client will be pushed to git
 # Until then, I load it as adpendency in the client app
-s.dependency 'BetelgeuseSwiftClient', '~> 0.0.6'
+s.dependency 'BetelgeuseSwiftClient', '~> 0.0.7'
 
 end
