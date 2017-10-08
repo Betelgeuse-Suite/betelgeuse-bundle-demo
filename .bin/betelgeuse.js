@@ -19,7 +19,11 @@ function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
 }
 var toString = function (v) {
-    v = v || {};
+    v = v || {
+        major: -1,
+        minor: -1,
+        patch: -1
+    };
     return v.major + "." + v.minor + "." + v.patch;
 };
 var now = function () { return (new Date()).getTime(); };
@@ -52,7 +56,7 @@ var DataStore = (function () {
 }());
 var store = new DataStore(window.localStorage);
 var getCurrentVersion = function () {
-    return (store.getCurrent() || { version: toVersion('11.0.14') }).version;
+    return (store.getCurrent() || { version: toVersion('11.1.3') }).version;
 };
 exports.getModel = function () {
     var cached = store.getCurrent();
@@ -60,7 +64,7 @@ exports.getModel = function () {
         return cached.data;
     }
     var json = require('./Data.json');
-    store.update(toVersion('11.0.14'), json);
+    store.update(toVersion('11.1.3'), json);
     return json;
 };
 (function (window, URL, VERSION) {

@@ -25,11 +25,11 @@ class Model {
             class File {
             
                 public let value: Int
-                //public let another-value: Int
+                public let another-value: Int
                 
                 init(_ jsonData: NSDictionary) {
                     self.value = jsonData["value"] as! Int
-                    //self.another-value = jsonData["another-value"] as! Int
+                    self.another-value = jsonData["another-value"] as! Int
                 }
             }
             
