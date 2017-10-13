@@ -11,10 +11,6 @@ import BetelgeuseSwiftClient
 
 public class SampleRepoSwift {
 
-    // MAYBE PLIST VALUES?
-    private static let ENDPOINT_URL = "https://rawgit.com/GabrielCTroia/beetlejuice-sample-repo1"
-    private static let CURRENT_VERSION = "11.0.1"
-
     private static var betelgeuseInstance: Betelgeuse?
 
     private static func getBetelgeuseInstance() -> Betelgeuse? {
@@ -24,15 +20,39 @@ public class SampleRepoSwift {
 
         let localBundle = Bundle(for: SampleRepoSwift.self as AnyClass)
 
+        let bgPlist = localBundle.bundleURL.appendingPathComponent("Betelgeuse.plist")
+        guard var CONFIG = NSMutableDictionary(contentsOf: bgPlist) else {
+            return nil
+        }
+
         if let bundleURL = localBundle.url(forResource: "SampleRepoSwiftDataBundle", withExtension: "bundle") {
+
+            let REPO_NAME = CONFIG["REPO_NAME"] as! String
+            let ENDPOINT_URL = CONFIG["ENDPOINT_URL"] as! String
+//            let CURRENT_DATA_VERSION = CONFIG["CURRENT_DATA_VERSION"] as! String
+            let CURRENT_SCHEMA_VERSION = CONFIG["CURRENT_SCHEMA_VERSION"] as! String
+
             SampleRepoSwift.betelgeuseInstance = Betelgeuse(
+                repoName: REPO_NAME,
                 localDataBundleUrl: bundleURL,
                 localFileName: "Data",
                 localFileExtension: "json",
-                remoteDataBaseUrl: URL(string: "\(ENDPOINT_URL)")!,
+                remoteDataBaseUrl: URL(string: ENDPOINT_URL)!,
                 remoteDataPath: ".bin/Data.json",
                 versionsRegisterUrl: URL(string: "\(ENDPOINT_URL)/master/versions.json")!,
-                currentVersion: CURRENT_VERSION
+                currentSchemaVersion: CURRENT_SCHEMA_VERSION,
+                updateDataVersion: { (newVersion: String) in
+//                    CONFIG["CURRENT_DATA_VERSION"] = newVersion
+//                    CONFIG.write(to: bgPlist)
+
+                    CONFIG.setValue(newVersion, forKey: "CURRENT_DATA_VERSION")
+                    print("nx \(CONFIG)")
+
+                    let x: NSDictionary = ["test": 2]
+                    print("bgplist \(bgPlist)")
+                    x.write(to: bgPlist, atomically: true)
+                    print("update to data version: \(newVersion)")
+                }
             )
 
             return SampleRepoSwift.betelgeuseInstance
