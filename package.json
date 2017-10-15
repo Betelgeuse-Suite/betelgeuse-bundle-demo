@@ -8,8 +8,8 @@
   "cdn": "https://rawgit.com/GabrielCTroia/betelgeuse-sample-repo1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "node ./node_modules/betelgeuse/.bin/index.js compile .",
-    "compile:sdks": "node ./node_modules/betelgeuse/.bin/index.js compile-sdks ."
+    "compile": "node ./node_modules/betelgeuse/dist/index.js compile .",
+    "compile:sdks": "node ./node_modules/betelgeuse/dist/index.js compile-sdks ."
   },
   "author": "",
   "license": "ISC",
