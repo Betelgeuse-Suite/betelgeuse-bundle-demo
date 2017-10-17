@@ -40,7 +40,7 @@ public class SampleRepoSwift {
                 localFileExtension: "json",
                 remoteDataBaseUrl: URL(string: ENDPOINT_URL)!,
                 remoteDataPath: ".bin/Data.json",
-                versionsRegisterUrl: URL(string: "\(ENDPOINT_URL)/master/versions.json")!,
+                versionsRegisterUrl: URL(string: "\(ENDPOINT_URL)/add-swift-support/versions.json")!,
                 currentSchemaVersion: CURRENT_SCHEMA_VERSION
             )
 
