@@ -7,8 +7,8 @@
 	<key>REPO_NAME</key>
 	<string>BetelgeuseBundleDemo</string>
 	<key>CURRENT_SCHEMA_VERSION</key>
-	<string>11.0.0</string>
+	<string>12.0.0</string>
 	<key>CURRENT_DATA_VERSION</key>
-	<string>11.0.0</string>
+	<string>12.0.0</string>
 </dict>
 </plist>

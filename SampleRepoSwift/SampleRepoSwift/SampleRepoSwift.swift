@@ -18,7 +18,6 @@ public class SampleRepoSwift {
             return instance
         }
 
-        print("get betelgeuse")
         let localBundle = Bundle(for: SampleRepoSwift.self as AnyClass)
 
         let bgPlist = localBundle.bundleURL.appendingPathComponent("Betelgeuse.plist")
@@ -42,19 +41,7 @@ public class SampleRepoSwift {
                 remoteDataBaseUrl: URL(string: ENDPOINT_URL)!,
                 remoteDataPath: ".bin/Data.json",
                 versionsRegisterUrl: URL(string: "\(ENDPOINT_URL)/master/versions.json")!,
-                currentSchemaVersion: CURRENT_SCHEMA_VERSION,
-                updateDataVersion: { (newVersion: String) in
-//                    CONFIG["CURRENT_DATA_VERSION"] = newVersion
-//                    CONFIG.write(to: bgPlist)
-
-                    CONFIG.setValue(newVersion, forKey: "CURRENT_DATA_VERSION")
-                    print("nx \(CONFIG)")
-
-                    let x: NSDictionary = ["test": 2]
-                    print("bgplist \(bgPlist)")
-                    x.write(to: bgPlist, atomically: true)
-                    print("update to data version: \(newVersion)")
-                }
+                currentSchemaVersion: CURRENT_SCHEMA_VERSION
             )
 
             return SampleRepoSwift.betelgeuseInstance
@@ -67,9 +54,7 @@ public class SampleRepoSwift {
     }
 
     public static func getBetelgeuseModel() -> Model? {
-        print("get betelgeuse model")
         if let instance = SampleRepoSwift.getBetelgeuseInstance() {
-            print("get betelgeuse model instance")
             if let data = instance.getModel() {
                 return Model(data)
             }
