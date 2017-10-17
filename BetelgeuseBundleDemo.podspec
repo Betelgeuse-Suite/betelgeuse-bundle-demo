@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
-s.name = 'BetelgeuseSampleRepo'
+s.name = 'BetelgeuseBundleDemo'
 s.version = '12.0.1'
 s.license = { :type => 'MIT', :file => 'LICENCE' }
 s.summary = 'Betelguse Sample Swift SDK'
 
-s.homepage = 'https://github.com/GabrielCTroia/beetlejuice-sample-repo1.git'
+s.homepage = 'https://github.com/GabrielCTroia/betelgeuse-bundle-demo.git'
 s.author = { name: 'Gabriel C. Troia', 'email' => 'catalin.troia@gmail.com' }
 
-s.source = { :git => 'https://github.com/GabrielCTroia/beetlejuice-sample-repo1.git', :tag => "v#{s.version}" }
+s.source = { :git => 'https://github.com/GabrielCTroia/betelgeuse-bundle-demo.git', :tag => "v#{s.version}" }
 s.source_files = "SampleRepoSwift/SampleRepoSwift/**/*.{swift}", ".bin/Model.swift"
 # s.source_files = ".bin/Model.swift"
 s.resource_bundles = {
