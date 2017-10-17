@@ -1,19 +1,19 @@
 {
-  "name": "betelgeuse-sample-repo1",
+  "name": "betelgeuse-bundle-demo",
   "version": "12.0.1",
   "description": "The Mock Repository",
   "main": "./.bin/betelgeuse.js",
   "types": "./.bin/betelgeuse.d.ts",
-  "repository": "https://github.com/GabrielCTroia/betelgeuse-sample-repo1.git",
-  "cdn": "https://rawgit.com/GabrielCTroia/betelgeuse-sample-repo1",
+  "repository": "https://github.com/GabrielCTroia/betelgeuse-bundle-demo.git",
+  "cdn": "https://rawgit.com/GabrielCTroia/betelgeuse-bundle-demo",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "node ./node_modules/betelgeuse/dist/index.js compile .",
     "compile:sdks": "node ./node_modules/betelgeuse/dist/index.js compile-sdks ."
   },
-  "author": "",
+  "author": "Gabriel C. Troia",
   "license": "ISC",
   "devDependencies": {
-    "beetlejuice": "git+https://github.com/GabrielCTroia/beetlejuice.git#v0.0.12"
+    "betelgeuse": "git+https://github.com/GabrielCTroia/betelgeuse.git#v0.0.17"
   }
 }
