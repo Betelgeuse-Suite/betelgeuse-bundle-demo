@@ -8,7 +8,7 @@ s.homepage = 'https://github.com/GabrielCTroia/betelgeuse-bundle-demo.git'
 s.author = { name: 'Gabriel C. Troia', 'email' => 'catalin.troia@gmail.com' }
 
 s.source = { :git => 'https://github.com/GabrielCTroia/betelgeuse-bundle-demo.git', :tag => "v#{s.version}" }
-s.source_files = "SampleRepoSwift/SampleRepoSwift/**/*.{swift}", ".bin/Model.swift", "SampleRepoSwift/SampleRepoSwift/Betelgeuse.plist"
+s.source_files = "SampleRepoSwift/SampleRepoSwift/**/*.{swift}", ".bin/Model.swift", ".bin/Betelgeuse.plist"
 # s.source_files = ".bin/Model.swift"
 s.resource_bundles = {
     'SampleRepoSwiftDataBundle' => [
