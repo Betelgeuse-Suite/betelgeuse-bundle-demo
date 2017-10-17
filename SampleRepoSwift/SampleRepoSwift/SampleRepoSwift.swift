@@ -18,10 +18,12 @@ public class SampleRepoSwift {
             return instance
         }
 
+        print("get betelgeuse")
         let localBundle = Bundle(for: SampleRepoSwift.self as AnyClass)
 
         let bgPlist = localBundle.bundleURL.appendingPathComponent("Betelgeuse.plist")
         guard var CONFIG = NSMutableDictionary(contentsOf: bgPlist) else {
+            print("Betelgeuse.plist not found at \(bgPlist.absoluteString)")
             return nil
         }
 
@@ -65,7 +67,9 @@ public class SampleRepoSwift {
     }
 
     public static func getBetelgeuseModel() -> Model? {
+        print("get betelgeuse model")
         if let instance = SampleRepoSwift.getBetelgeuseInstance() {
+            print("get betelgeuse model instance")
             if let data = instance.getModel() {
                 return Model(data)
             }
