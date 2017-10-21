@@ -62,4 +62,10 @@ public class SampleRepoSwift {
 
         return nil
     }
+    
+    public static func checkForUpdates() -> Void {
+        if let instance = SampleRepoSwift.getBetelgeuseInstance() {
+            instance.checkAndInstallUpdates()
+        }
+    }
 }
